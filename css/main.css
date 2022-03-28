@@ -1,7 +1,6 @@
 .menu-open-btn,
 .menu-close-btn {
   width: 40px;
-  height: 40px;
   padding: 0;
   background-color: transparent;
   border: none;
@@ -39,7 +38,6 @@
 
 .mob-menu .container {
   padding-left: 0;
-  padding-right: 0;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -180,7 +178,8 @@ a {
 }
 
 .section {
-  padding-top: 94px 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 ul {
@@ -563,12 +562,19 @@ textarea:hover, textarea:focus {
 .check-form {
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   margin-top: 20px;
   margin-bottom: 30px;
   color: #757575;
+}
+
+@media screen and (min-width: 1200px) {
+  .check-form {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .check-form__condition {
@@ -598,7 +604,6 @@ textarea:hover, textarea:focus {
 
 .vector__icon {
   display: inline-block;
-  margin-right: 8px;
   width: 16px;
   height: 15px;
   color: #212121;
@@ -637,8 +642,8 @@ textarea:hover, textarea:focus {
   width: 200px;
   height: 50px;
   padding: 10px 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 12px;
+  font-family: inherit;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
@@ -659,13 +664,6 @@ textarea:hover, textarea:focus {
   outline: none;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media screen and (min-width: 1200px) {
-  .but__sumbit {
-    margin-left: 12px;
-    margin-top: 0;
-  }
 }
 
 .but__sumbit:hover, .but__sumbit:focus {
@@ -805,14 +803,14 @@ textarea:hover, textarea:focus {
 
 .hero__title {
   font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   margin-top: 0;
   margin-bottom: 30px;
   text-transform: uppercase;
   color: #ffffff;
-  font-size: 26px;
-  line-height: 1.62;
 }
 
 @media screen and (min-width: 1200px) {
@@ -852,10 +850,6 @@ textarea:hover, textarea:focus {
   }
 }
 
-/*.section-no-padding {
-  padding-top: 94px;
-  padding-bottom: 0;
-}*/
 .feature {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -947,6 +941,10 @@ textarea:hover, textarea:focus {
   color: #757575;
 }
 
+.info__section {
+  padding-bottom: 94px;
+}
+
 @media screen and (max-width: 480px) {
   .info__section {
     display: none;
@@ -1002,6 +1000,15 @@ textarea:hover, textarea:focus {
 
 .about__section {
   background: #f5f4fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .about__section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .about__title {
@@ -1328,6 +1335,7 @@ textarea:hover, textarea:focus {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
+  z-index: 1;
 }
 
 .grid__overlay-text {
@@ -1446,12 +1454,11 @@ textarea:hover, textarea:focus {
 }
 
 .sends {
-  margin-left: 93px;
   margin-top: 60px;
 }
 
 @media screen and (max-width: 1199px) {
-  .send__form {
+  .sends .send__form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1519,6 +1526,12 @@ textarea:hover, textarea:focus {
   .send__form input {
     width: 358px;
     margin-right: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1540,31 +1553,30 @@ textarea:hover, textarea:focus {
 }
 
 .footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
   .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer__container {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: start;
   }
 }
 
@@ -1593,7 +1605,6 @@ textarea:hover, textarea:focus {
 .footer-address {
   text-align: center;
   margin-bottom: 60px;
-  margin-right: 70px;
 }
 
 .address {

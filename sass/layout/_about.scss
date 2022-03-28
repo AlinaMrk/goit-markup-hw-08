@@ -1,5 +1,11 @@
 .about__section {
   background: $iconsColor;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .about__title {
   font-style: normal;
@@ -27,8 +33,6 @@
     flex-wrap: wrap;
   }
 }
-//display: flex;
-//flex-wrap: wrap;
 
 .about__name {
   font-weight: 500;

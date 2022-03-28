@@ -44,9 +44,6 @@
 }
 
 .hero__container {
-  //padding-top: 200px;
-  //padding-bottom: 200px;
-
   padding-top: 118px;
   padding-bottom: 118px;
 
@@ -57,17 +54,6 @@
 }
 .hero__title {
   font-weight: 900;
-  //font-size: 44px;
-  //line-height: 1.36;
-
-  text-align: center;
-  letter-spacing: 0.06em;
-
-  margin-top: 0;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  color: $primaryColor;
-
   font-size: 26px;
   line-height: 1.62;
 
@@ -75,7 +61,15 @@
     font-size: 44px;
     line-height: 1.36;
   }
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: $primaryColor;
 }
+
 .hero__button {
   font-family: inherit;
   font-style: normal;

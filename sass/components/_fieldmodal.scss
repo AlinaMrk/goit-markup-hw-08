@@ -85,14 +85,18 @@ textarea {
 .check-form {
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
+
   letter-spacing: 0.03em;
 
   margin-top: 20px;
   margin-bottom: 30px;
   color: $foregroundColor;
-
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
   &__condition {
     text-decoration-line: underline;
     color: $primaryBtncolor;
@@ -118,7 +122,7 @@ textarea {
 
 .vector__icon {
   display: inline-block;
-  margin-right: 8px;
+  //margin-right: 8px;
   width: 16px;
   height: 15px;
   color: $primaryTextColor;

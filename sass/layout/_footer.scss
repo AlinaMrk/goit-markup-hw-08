@@ -4,17 +4,16 @@
   background-color: $pimaryFooColor;
 
   &__container {
-    display: flex;
-    flex-wrap: wrap;
-
-    @media screen and (min-width: 768px) {
+    text-align: center;
+    @media screen and(min-width: 768px) {
+      display: flex;
       flex-wrap: wrap;
-      flex-direction: row;
       align-items: baseline;
+      justify-content: space-around;
     }
-
-    @media screen and (min-width: 1200px) {
-      flex-wrap: nowrap;
+    @media screen and(min-width: 1200px) {
+      justify-content: space-between;
+      text-align: start;
     }
   }
 
@@ -41,7 +40,6 @@
 .footer-address {
   text-align: center;
   margin-bottom: 60px;
-  margin-right: 70px;
 }
 .address {
   margin-top: 20px;
