@@ -1,0 +1,107 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $pimaryFooColor;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: baseline;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  .footer__logo {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    text-decoration: none;
+    color: $primaryColor;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+      line-height: 1.19;
+    }
+  }
+  .logo-title {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    color: $accentColor;
+  }
+}
+
+.footer-address {
+  text-align: center;
+  margin-bottom: 60px;
+  margin-right: 70px;
+}
+.address {
+  margin-top: 20px;
+}
+@media screen and (max-width: 1199px) {
+  .address-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.address__item {
+  margin-bottom: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
+}
+.address-list .address__link--address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-top: 20px;
+  color: $primaryColor;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address-list .address__link--contact {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-top: 20px;
+  color: $backgroundColor;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address__item .address__link--contact {
+  color: $backgroundColor;
+}
+.address__link .address__link--address {
+  color: $primaryColor;
+  text-decoration: none;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.address__link:hover,
+.address__link:focus {
+  color: $accentColor;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
