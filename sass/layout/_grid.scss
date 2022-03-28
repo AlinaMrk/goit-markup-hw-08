@@ -56,6 +56,11 @@
   opacity: 1;
   transform: translateY(0);
 }
+.grid-overlay:hover .grid__overlay-text,
+.grid-overlay:focus .grid__overlay-text {
+  opacity: 1;
+  transform: translateY(0);
+}
 .grid__overlay-text {
   margin: 0;
   padding: 0px 24px;
